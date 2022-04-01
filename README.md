@@ -15,29 +15,29 @@
 - [VGG trained on ImageNet](https://download.pytorch.org/models/vgg16-397923af.pth)
 
 #### Training Steps:
-##### Train A Basic Stereo Matching Network
+##### 1.Train A Basic Stereo Matching Network:
 ```bash
 python train_baseline.py --data_path (your SceneFlow data folder)
 ```
-##### Graft VGG's Feature and Train the Feature Adaptor
+##### 2.Graft VGG's Feature and Train the Feature Adaptor:
 ```bash
 python train_adaptor.py --data_path (your SceneFlow data folder)
 ```
-##### Retrain the Cost Aggregation Module
+##### 3.Retrain the Cost Aggregation Module:
 ```bash
 python retrain_CostAggregation.py --data_path (your SceneFlow data folder)
 ```
 
 #### Evaluation:
-##### Evaluate on KITTI
+##### Evaluate on KITTI:
 ```bash
 python test_kitti.py --data_path (your KITTI training data folder) --load_path (the path of the final model)
 ```
-##### Evaluate on Middlebury-H
+##### Evaluate on Middlebury-H:
 ```bash
 python test_middlebury.py --data_path (your Middlebury training data folder) --load_path (the path of the final model)
 ```
-##### Evaluate on ETH3D
+##### Evaluate on ETH3D:
 ```bash
 python test_middlebury.py --data_path (your Middlebury training data folder) --load_path (the path of the final model)
 ```
