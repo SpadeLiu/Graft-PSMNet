@@ -1,6 +1,6 @@
 ### GraftNet: Towards Domain Generalized Stereo Matching with a Broad-Spectrum and Task-Oriented Feature
 
-<img src="figure/figure.png" width="60%" height="50%">
+<img src="figure/figure.png" width="80%" height="60%">
 
 #### Dependencies:
 - Python 3.6
