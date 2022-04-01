@@ -42,3 +42,6 @@ python test_middlebury.py --data_path (your Middlebury training data folder) --l
 ```bash
 python test_middlebury.py --data_path (your Middlebury training data folder) --load_path (the path of the final model)
 ```
+
+#### Pretrained Models:
+[Google Drive](https://drive.google.com/drive/folders/1Ud9-HpHSXE5qMRQ17Fs8BNLfyE2VW03U?usp=sharing)
