@@ -20,7 +20,7 @@
 ```bash
 python train_baseline.py --data_path (your SceneFlow data folder)
 ```
-##### 2. Graft VGG's Feature and Train the Feature Adaptor:
+##### 2. Graft A Broad-Spectrum Feature and Train the Feature Adaptor:
 ```bash
 python train_adaptor.py --data_path (your SceneFlow data folder)
 ```
