@@ -15,15 +15,15 @@
 - [VGG trained on ImageNet](https://download.pytorch.org/models/vgg16-397923af.pth)
 
 #### Training Steps:
-##### 1.Train A Basic Stereo Matching Network:
+##### 1. Train A Basic Stereo Matching Network:
 ```bash
 python train_baseline.py --data_path (your SceneFlow data folder)
 ```
-##### 2.Graft VGG's Feature and Train the Feature Adaptor:
+##### 2. Graft VGG's Feature and Train the Feature Adaptor:
 ```bash
 python train_adaptor.py --data_path (your SceneFlow data folder)
 ```
-##### 3.Retrain the Cost Aggregation Module:
+##### 3. Retrain the Cost Aggregation Module:
 ```bash
 python retrain_CostAggregation.py --data_path (your SceneFlow data folder)
 ```
