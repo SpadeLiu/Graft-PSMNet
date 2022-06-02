@@ -56,7 +56,7 @@ if cuda:
     adaptor = nn.DataParallel(adaptor.cuda())
     model = nn.DataParallel(model.cuda())
 
-adaptor.load_state_dict(torch.load(args.load_path)['net'])
+adaptor.load_state_dict(torch.load(args.load_path)['fa_net'])
 for p in adaptor.parameters():
     p.requires_grad = False
 
